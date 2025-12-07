@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prabodhan Agro Products - Vegetables, Pulses, Rice, Wheat - Premium quality agricultural commodities">
+  <title>Products | Prabodhan Agro Pvt. Ltd.</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="logo">
+          <a href="index.html">
+            <i class="fas fa-leaf"></i>
+            <span>Prabodhan Agro</span>
+          </a>
+        </div>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="warehouse.html">Warehouse</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="contact.html" class="btn-contact">Contact Us</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Products</h1>
+      <p>Premium quality agricultural commodities for FMCG and food processing industries</p>
+    </div>
+  </section>
+
+  <!-- Products Overview -->
+  <section class="products-overview">
+    <div class="container">
+      <div class="section-header">
+        <h2>Product Categories</h2>
+        <p>Quality checked, graded, and ready for bulk supply</p>
+      </div>
+
+      <div class="category-filter">
+        <button class="filter-btn active" data-category="all">All Products</button>
+        <button class="filter-btn" data-category="vegetables">Vegetables</button>
+        <button class="filter-btn" data-category="pulses">Pulses</button>
+        <button class="filter-btn" data-category="rice">Rice</button>
+        <button class="filter-btn" data-category="wheat">Wheat</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vegetables Section -->
+  <section class="product-category" id="vegetables" data-category="vegetables">
+    <div class="container">
+      <div class="category-header">
+        <div class="category-icon">
+          <i class="fas fa-carrot"></i>
+        </div>
+        <div>
+          <h2>Vegetables</h2>
+          <p>Fresh, quality-checked vegetables for food processing</p>
+        </div>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/products/vegetables/potato.jpg" alt="Potato" onerror="this.src='https://via.placeholder.com/300x200/2E7D32/FFFFFF?text=Potato'">
+          </div>
+          <div class="product-info">
+            <h3>Potato</h3>
+            <div class="product-meta">
+              <span class="grade"><i class="fas fa-star"></i> Premium Grade</span>
+              <span class="packaging"><i class="fas fa-box"></i> 25kg, 50kg, Bulk</span>
+            </div>
+            <p>Quality potatoes suitable for snacks, frozen foods, and processing industries. Sorted, graded, and stored in optimal conditions.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> Quality Checked</span>
+              <span><i class="fas fa-check"></i> Food Grade</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/products/vegetables/onion.jpg" alt="Onion" onerror="this.src='https://via.placeholder.com/300x200/2E7D32/FFFFFF?text=Onion'">
+          </div>
+          <div class="product-info">
+            <h3>Onion</h3>
+            <div class="product-meta">
+              <span class="grade"><i class="fas fa-star"></i> Premium Grade</span>
+              <span class="packaging"><i class="fas fa-box"></i> 25kg, 50kg, Bulk</span>
+            </div>
+            <p>Fresh onions for food processing, dehydration, and export. Available in multiple sizes and grades as per requirements.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> Quality Checked</span>
+              <span><i class="fas fa-check"></i> Food Grade</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/products/vegetables/tomato.jpg" alt="Tomato" onerror="this.src='https://via.placeholder.com/300x200/2E7D32/FFFFFF?text=Tomato'">
+          </div>
+          <div class="product-info">
+            <h3>Tomato</h3>
+            <div class="product-meta">
+              <span class="grade"><i class="fas fa-star"></i> Premium Grade</span>
+              <span class="packaging"><i class="fas fa-box"></i> 25kg Crates</span>
+            </div>
+            <p>Fresh tomatoes for processing, sauce production, and food industry. Sourced from quality farms and handled with care.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> Quality Checked</span>
+              <span><i class="fas fa-check"></i> Food Grade</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pulses Section -->
+  <section class="product-category" id="pulses" data-category="pulses">
+    <div class="container">
+      <div class="category-header">
+        <div class="category-icon">
+          <i class="fas fa-seedling"></i>
+        </div>
+        <div>
+          <h2>Pulses</h2>
+          <p>Premium quality pulses for food manufacturing</p>
+        </div>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/products/pulses/tur-dal.jpg" alt="Tur Dal" onerror="this.src='https://via.placeholder.com/300x200/2E7D32/FFFFFF?text=Tur+Dal'">
+          </div>
+          <div class="product-info">
+            <h3>Tur Dal (Arhar)</h3>
+            <div class="product-meta">
+              <span class="grade"><i class="fas fa-star"></i> Premium Grade</span>
+              <span class="packaging"><i class="fas fa-box"></i> 25kg, 50kg Bags</span>
+            </div>
+            <p>High-quality Tur dal, cleaned and sorted. Ideal for dal processing, ready-to-eat products, and FMCG packaging.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> Quality Checked</span>
+              <span><i class="fas fa-check"></i> Sorted & Cleaned</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/products/pulses/moong-dal.jpg" alt="Moong Dal" onerror="this.src='https://via.placeholder.com/300x200/2E7D32/FFFFFF?text=Moong+Dal'">
+          </div>
+          <div class="product-info">
+            <h3>Moong Dal</h3>
+            <div class="product-meta">
+              <span class="grade"><i class="fas fa-star"></i> Premium Grade</span>
+              <span class="packaging"><i class="fas fa-box"></i> 25kg, 50kg Bags</span>
+            </div>
+            <p>Premium Moong dal suitable for snacks, namkeen, and food processing. Available in whole and split varieties.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> Quality Checked</span>
+              <span><i class="fas fa-check"></i> Sorted & Cleaned</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/products/pulses/chana-dal.jpg" alt="Chana Dal" onerror="this.src='https://via.placeholder.com/300x200/2E7D32/FFFFFF?text=Chana+Dal'">
+          </div>
+          <div class="product-info">
+            <h3>Chana Dal</h3>
+            <div class="product-meta">
+              <span class="grade"><i class="fas fa-star"></i> Premium Grade</span>
+              <span class="packaging"><i class="fas fa-box"></i> 25kg, 50kg Bags</span>
+            </div>
+            <p>Quality Chana dal for snacks, flour production, and food manufacturing. Consistent quality and sizing.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> Quality Checked</span>
+              <span><i class="fas fa-check"></i> Sorted & Cleaned</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rice Section -->
+  <section class="product-category" id="rice" data-category="rice">
+    <div class="container">
+      <div class="category-header">
+        <div class="category-icon">
+          <i class="fas fa-spa"></i>
+        </div>
+        <div>
+          <h2>Rice</h2>
+          <p>Premium rice varieties for food industry</p>
+        </div>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/products/rice/basmati.jpg" alt="Basmati Rice" onerror="this.src='https://via.placeholder.com/300x200/2E7D32/FFFFFF?text=Basmati+Rice'">
+          </div>
+          <div class="product-info">
+            <h3>Basmati Rice</h3>
+            <div class="product-meta">
+              <span class="grade"><i class="fas fa-star"></i> Premium Grade</span>
+              <span class="packaging"><i class="fas fa-box"></i> 25kg, 50kg Bags</span>
+            </div>
+            <p>Long-grain aromatic Basmati rice. Ideal for ready-to-eat meals, biryani mixes, and premium rice products.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> Premium Quality</span>
+              <span><i class="fas fa-check"></i> Aged Rice</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/products/rice/sona-masuri.jpg" alt="Sona Masuri Rice" onerror="this.src='https://via.placeholder.com/300x200/2E7D32/FFFFFF?text=Sona+Masuri'">
+          </div>
+          <div class="product-info">
+            <h3>Sona Masuri Rice</h3>
+            <div class="product-meta">
+              <span class="grade"><i class="fas fa-star"></i> Premium Grade</span>
+              <span class="packaging"><i class="fas fa-box"></i> 25kg, 50kg Bags</span>
+            </div>
+            <p>Medium-grain aromatic rice. Popular choice for daily consumption and food manufacturing.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> Premium Quality</span>
+              <span><i class="fas fa-check"></i> Light & Fluffy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/products/rice/parboiled.jpg" alt="Parboiled Rice" onerror="this.src='https://via.placeholder.com/300x200/2E7D32/FFFFFF?text=Parboiled+Rice'">
+          </div>
+          <div class="product-info">
+            <h3>Parboiled Rice</h3>
+            <div class="product-meta">
+              <span class="grade"><i class="fas fa-star"></i> Standard Grade</span>
+              <span class="packaging"><i class="fas fa-box"></i> 25kg, 50kg Bags</span>
+            </div>
+            <p>Nutrient-rich parboiled rice for bulk consumption and institutional use. Longer shelf life.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> Nutritious</span>
+              <span><i class="fas fa-check"></i> Long Shelf Life</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wheat Section -->
+  <section class="product-category" id="wheat" data-category="wheat">
+    <div class="container">
+      <div class="category-header">
+        <div class="category-icon">
+          <i class="fas fa-wheat-awn"></i>
+        </div>
+        <div>
+          <h2>Wheat</h2>
+          <p>Quality wheat for flour mills and food processing</p>
+        </div>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/products/wheat/durum.jpg" alt="Durum Wheat" onerror="this.src='https://via.placeholder.com/300x200/2E7D32/FFFFFF?text=Durum+Wheat'">
+          </div>
+          <div class="product-info">
+            <h3>Durum Wheat</h3>
+            <div class="product-meta">
+              <span class="grade"><i class="fas fa-star"></i> Premium Grade</span>
+              <span class="packaging"><i class="fas fa-box"></i> 50kg Bags, Bulk</span>
+            </div>
+            <p>High-protein durum wheat for pasta production and premium flour manufacturing. Consistent quality and sizing.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> High Protein</span>
+              <span><i class="fas fa-check"></i> Mill Ready</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/products/wheat/sharbati.jpg" alt="Sharbati Wheat" onerror="this.src='https://via.placeholder.com/300x200/2E7D32/FFFFFF?text=Sharbati+Wheat'">
+          </div>
+          <div class="product-info">
+            <h3>Sharbati Wheat</h3>
+            <div class="product-meta">
+              <span class="grade"><i class="fas fa-star"></i> Premium Grade</span>
+              <span class="packaging"><i class="fas fa-box"></i> 50kg Bags, Bulk</span>
+            </div>
+            <p>Premium Sharbati wheat variety. Ideal for atta production and bakery industries. Golden color and superior quality.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> Premium Quality</span>
+              <span><i class="fas fa-check"></i> Golden Color</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/products/wheat/lokwan.jpg" alt="Lokwan Wheat" onerror="this.src='https://via.placeholder.com/300x200/2E7D32/FFFFFF?text=Lokwan+Wheat'">
+          </div>
+          <div class="product-info">
+            <h3>Lokwan Wheat</h3>
+            <div class="product-meta">
+              <span class="grade"><i class="fas fa-star"></i> Standard Grade</span>
+              <span class="packaging"><i class="fas fa-box"></i> 50kg Bags, Bulk</span>
+            </div>
+            <p>Standard variety wheat for general flour production and industrial use. Cost-effective and reliable quality.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> Cost Effective</span>
+              <span><i class="fas fa-check"></i> Consistent Quality</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Need Bulk Supply?</h2>
+      <p>Contact us for pricing, samples, and custom packaging requirements</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary">Request Quote</a>
+        <a href="tel:+919958169786" class="btn btn-secondary"><i class="fas fa-phone"></i> +91 99581 69786</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h3>Prabodhan Agro Pvt. Ltd.</h3>
+          <p>Your trusted partner for agricultural warehouse and raw material supply in Gujarat.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="warehouse.html">Warehouse</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="clients.html">Clients</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html#vegetables">Vegetables</a></li>
+            <li><a href="products.html#pulses">Pulses</a></li>
+            <li><a href="products.html#rice">Rice</a></li>
+            <li><a href="products.html#wheat">Wheat</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> FF B-Wing 108, New Smile Orthodontics, Kuber Sidhdhi Complex-2, NearRTO, Dharampur Road, Atak Pardi, Valsad, Gujarat - 396007</li>
+            <li><i class="fas fa-phone"></i> +91 99581 69786</li>
+            <li><i class="fas fa-envelope"></i> mdprabodhan@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Prabodhan Agro Pvt. Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/products-filter.js"></script>
+</body>
+</html>
