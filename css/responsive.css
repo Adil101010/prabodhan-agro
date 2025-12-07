@@ -48,6 +48,17 @@
     font-size: 2rem;
   }
 
+
+
+     @media (max-width: 767px) {
+  .hero {
+    background-attachment: scroll;
+    background-position: center;
+  }
+}
+
+
+
   /* ===== ABOUT PAGE ===== */
   .story-content {
     grid-template-columns: 1fr;

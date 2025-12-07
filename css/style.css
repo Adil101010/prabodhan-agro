@@ -137,7 +137,7 @@ img {
 /* ===== HERO SECTION ===== */
 .hero {
   background: linear-gradient(135deg, var(--primary-green) 0%, #1B5E20 100%);
-  background-image: url('/images/banner/hero-bg.jpg');
+  background-image: url('../images/banner/hero-bg.jpg');  /* yeh IMPORTANT */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -146,7 +146,8 @@ img {
   align-items: center;
   position: relative;
   margin-top: 70px;
-}  
+}
+
 
 
 
@@ -458,66 +459,66 @@ img {
 }
 /* ===== FOOTER ===== */
 .footer {
-  background: var(--dark-text);
-  color: var(--white);
-  padding: 4rem 0 2rem;
+  background: #111416;
+  color: #ffffff;
+  padding: 4rem 0 2.5rem;
   margin-top: 4rem;
 }
 
-/* 4 Columns on Desktop */
+/* 2 columns desktop: left brand, right contact */
 .footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.4fr;
-  gap: 3rem;
+  grid-template-columns: 1.3fr 1.7fr;
+  gap: 3.5rem;
+  align-items: flex-start;
   margin-bottom: 2.5rem;
 }
 
-/* Brand column thoda wide */
-.footer-brand {
-  max-width: 360px;
-}
-
+/* Brand column */
 .footer-col h3,
 .footer-col h4 {
-  margin-bottom: 1.4rem;
   color: var(--accent-yellow);
+  margin-bottom: 1.2rem;
+  font-weight: 600;
   position: relative;
 }
 
-/* Small underline under headings */
-.footer-col h4::after,
-.footer-col h3::after {
+/* Small underline */
+.footer-col h3::after,
+.footer-col h4::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -0.4rem;
-  width: 40px;
+  bottom: -0.45rem;
+  width: 42px;
   height: 2px;
   background: var(--primary-green);
   border-radius: 999px;
 }
 
 .footer-tagline {
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.78);
   line-height: 1.7;
+  max-width: 420px;
 }
 
-/* Social icons */
+/* Social icons row */
 .footer-social {
   display: flex;
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 1.6rem;
 }
 
 .footer-social a {
   width: 40px;
   height: 40px;
+  border-radius: 999px;
   background: var(--primary-green);
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.3s ease;
+  color: #ffffff;
+  transition: 0.25s ease;
 }
 
 .footer-social a:hover {
@@ -525,75 +526,77 @@ img {
   transform: translateY(-3px) scale(1.03);
 }
 
-/* Links list */
-.footer-links {
-  list-style: none;
-}
-
-.footer-links li {
-  margin-bottom: 0.7rem;
-}
-
-.footer-links a {
-  color: rgba(255,255,255,0.7);
-  font-size: 0.95rem;
-  transition: 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: var(--accent-yellow);
-  padding-left: 6px;
-}
-
-/* Contact list */
+/* Contact list on right */
 .footer-contact {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-contact li {
   display: flex;
   align-items: flex-start;
-  gap: 0.8rem;
+  gap: 0.85rem;
   margin-bottom: 1rem;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.8);
+  font-size: 0.96rem;
   line-height: 1.6;
-  font-size: 0.95rem;
 }
 
 .footer-contact i {
   color: var(--accent-yellow);
-  margin-top: 4px;
+  margin-top: 3px;
+  min-width: 18px;
 }
 
 .footer-contact a {
-  color: rgba(255,255,255,0.75);
-  transition: 0.3s ease;
+  color: rgba(255,255,255,0.85);
+  transition: 0.25s ease;
 }
 
 .footer-contact a:hover {
   color: var(--accent-yellow);
 }
 
-/* Bottom bar */
+/* Bottom strip */
 .footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 1.8rem;
   text-align: center;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255,255,255,0.12);
   color: rgba(255,255,255,0.6);
   font-size: 0.9rem;
 }
 
-/* ===== Responsive ===== */
+/* ===== RESPONSIVE FOOTER ===== */
 @media (max-width: 992px) {
+  .footer {
+    padding: 3.5rem 0 2rem;
+  }
+
   .footer-content {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 576px) {
   .footer-content {
-    grid-template-columns: 1fr;
+    text-align: left;
   }
+
+  .footer-social {
+    justify-content: flex-start;
+  }
+
+  .footer-contact li {
+    font-size: 0.9rem;
+  }
+
+  .footer-col h3,
+  .footer-col h4 {
+    font-size: 1.1rem;
+  }
+
   .footer-col h3::after,
   .footer-col h4::after {
     width: 32px;
