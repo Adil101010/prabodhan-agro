@@ -137,7 +137,7 @@ img {
 /* ===== HERO SECTION ===== */
 .hero {
   background: linear-gradient(135deg, var(--primary-green) 0%, #1B5E20 100%);
-  background-image: url('../images/banner/hero-bg.jpg');
+  background-image: url('/images/banner/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -146,7 +146,9 @@ img {
   align-items: center;
   position: relative;
   margin-top: 70px;
-}
+}  
+
+
 
 .hero-overlay {
   position: absolute;
@@ -534,6 +536,18 @@ img {
   border-top: 1px solid rgba(255,255,255,0.1);
   color: rgba(255,255,255,0.6);
 }
+/* Footer horizontal links */
+.footer-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+.footer-links-row li {
+  margin-bottom: 0;
+}
+
 
 /* ===== ANIMATIONS ===== */
 @keyframes fadeInUp {
@@ -1718,3 +1732,7 @@ img {
   gap: 1.5rem;
   justify-content: center;
 }
+ 
+
+
+
